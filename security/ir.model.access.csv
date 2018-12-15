@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_crm_lead,loan_management.crm_lead,model_crm_lead,loan_management.loan_management_group_admin,1,1,1,1
+access_loan_type,loan_management.loan_type,model_loan_type,loan_management.loan_management_group_admin,1,1,1,1
+access_loan_duration,loan_management.loan_duration,model_loan_duration,loan_management.loan_management_group_admin,1,1,1,1
+access_loan_proof,loan_management.loan_proof,model_loan_proof,loan_management.loan_management_group_admin,1,1,1,1
+access_loan_loan,loan_management.loan_loan,model_loan_loan,loan_management.loan_management_group_admin,1,1,1,1
+access_loan_installment,loan_management.loan_installment,model_loan_installment,loan_management.loan_management_group_admin,1,1,1,1

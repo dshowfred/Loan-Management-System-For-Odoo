@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+        <record id="loan_document_upload_notification_email_template" model="mail.template">
+          <field name="name">Loan Document Upload Notification e-mail template</field>
+          <field name="email_from">${o.company_id and o.company_id.email or ''}</field>
+          <field name="subject">Congratz ${o.name}, you loan application is accepted..</field>
+          <field name="email_to">${o.email|safe}</field>
+          <field name="lang">${o.lang}</field>
+          <field name="model_id" ref="loan_management.model_crm_lead"/>
+          <field name="auto_delete" eval="True"/>
+      	  <field name="body_html">
+                  <![CDATA[
+      	      <p>Dear ${(o.name)},<br/><br/>
+      	      Congratulations!, Ypur loan application is accepted...<br/></p>
+                    Regards,<br/>
+                    ${(o.company_id.name)}
+      	    ]]>
+      	  </field>
+       </record>
+    </data>
+</odoo>
